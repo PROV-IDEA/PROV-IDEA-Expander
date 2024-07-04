@@ -11,8 +11,8 @@ variable-value pairs that associate variables of the templates and values. Final
 by replacing all variables with values found in a set of bindings, obtaining the corresponding PROV document ready for provenance consumption.
 
 *PROV-IDEA Expander* has been developed to perform such an expansion automatically. More specifically, it goes through the binding documents generated from the execution of
-schema evolution operations (both SMOs and DMOs), finds the PROV template, from those established by the PROV-IDEA approach, related to each binding (that is, to each operation), 
-and, finally, uses the *expansion algorithm* to generate the corresponding PROV document ready for provenance consumption. 
+schema evolution operations (both SMOs and DMOs), finds the PROV template related to each binding (that is, to each operation), and, finally, uses the *expansion algorithm* 
+to generate the corresponding PROV document ready for provenance consumption. 
 
 ## Project's main content
 
