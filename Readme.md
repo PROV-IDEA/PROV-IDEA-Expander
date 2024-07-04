@@ -1,14 +1,9 @@
 # PROV-IDEA Expander
 
 This tool allows the interested user to obtain PROV documents from bindings with schema evolution provenance data, as established by the PROV-IDEA approach [1]. 
-PROV-IDEA is presented as a PROV-Interoperable Database Evolution Approach aimed at integrating provenance information into relational database schema evolution,
-using PROV as provenance framework.
 
-PROV-IDEA proposes the use of *PROV templates* [2], expressed in PROV [3], for Schema Modification Operators (SMOs) and Data Modification Operators (DMOs) to structure the 
-provenance to be generated from database evolution. More specifically, the approach establishes a set of PROV Templates to represent SMOs and DMOs. These templates contain
-variables that act as placeholders for values. On the other hand, following the approach, as SMOs and DMOs take place, *sets of bindings* are generated, which are mainly 
-variable-value pairs that associate variables of the templates and values. Finally, the *expansion algorithm* [2] can be used to generate *PROV documents* from templates, 
-by replacing all variables with values found in a set of bindings, obtaining the corresponding PROV document ready for provenance consumption.
+PROV-IDEA is presented as a PROV-Interoperable Database Evolution Approach aimed at integrating provenance information into relational database schema evolution, using PROV as provenance framework. PROV-IDEA proposes the use of *PROV templates* [2], expressed in PROV [3], for Schema Modification Operators (SMOs) and Data Modification Operators (DMOs) to structure the provenance to be generated from database evolution. More specifically, the approach establishes a set of PROV Templates to represent SMOs and DMOs. These templates contain
+variables that act as placeholders for values. On the other hand, following the approach, as SMOs and DMOs take place, *sets of bindings* are generated, which are mainly variable-value pairs that associate variables of the templates and values. Finally, the *expansion algorithm* [2] can be used to generate *PROV documents* from templates, by replacing all variables with values found in a set of bindings, obtaining the corresponding PROV document ready for provenance consumption.
 
 *PROV-IDEA Expander* has been developed to perform such an expansion automatically. More specifically, it goes through the binding documents generated from the execution of
 schema evolution operations (both SMOs and DMOs), finds the PROV template related to each binding (that is, to each operation), and, finally, uses the *expansion algorithm* 
