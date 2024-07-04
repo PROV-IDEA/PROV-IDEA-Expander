@@ -30,7 +30,7 @@ For testing *PROV-IDEA Expander* you'll have to use at least JDK-17.
       
 ## Running
 
-To test *PROV-IDEA Expander* you will have to run the *main* method of the *Expander.java* class.
+To test *PROV-IDEA Expander* you'll have to run the *main* method of the *Expander.java* class.
 
 ## References
 
