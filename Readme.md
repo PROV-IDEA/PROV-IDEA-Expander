@@ -34,10 +34,8 @@ To test *PROV-IDEA Expander* you'll have to run the *main* method of the *Expand
 
 ## References
 
-[1] PROV-IDEA. Supplementary material. Available at: https://zenodo.org/records/10701239.
+[1] PROV-IDEA. Supplementary material. Available at: [https://zenodo.org/records/10701239](https://zenodo.org/records/10701239).
 [2] Luc Moreau, Belfrit Victor Batlajery, Trung Dong Huynh, Danius Michaelides, and Heather Packer. 2018. A Templating System to Generate
 Provenance. IEEE Transactions on Software Engineering 44, 2 (2018), 103–121.
 [3] Paul Groth and Luc Moreau (eds.). 2013. PROV-Overview. An Overview of the PROV Family of Documents. W3C Working Group Note NOTE-prov-
-overview-20130430. World Wide Web Consortium. Available at www.w3.org/TR/2013/NOTE-prov-overview-20130430/.
-
-
+overview-20130430. World Wide Web Consortium. Available at  [www.w3.org/TR/2013/NOTE-prov-overview-20130430/](www.w3.org/TR/2013/NOTE-prov-overview-20130430/).
