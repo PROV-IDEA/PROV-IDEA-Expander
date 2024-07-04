@@ -27,9 +27,12 @@ The repository mainly contains the following folders:
 ## Setup environment
 
 For testing *PROV-IDEA Expander* you'll have to use at least JDK-17.
+
 The code is configured to generate the PROV documents in TURTLE format but it can be modified to generate documents in other 
 formats such as JSON, JPEG or SVG (options available by the ProvFormat class at org.openprovenance.prov.interop.InteropFramework.ProvFormat).
+
 The format can be changed in the **expand** method, in line:
+
   **intFr.writeDocument("src/expandedDocuments/" + expandedDocumentName, ProvFormat.<format>, expanded);**
       
 ## Running
