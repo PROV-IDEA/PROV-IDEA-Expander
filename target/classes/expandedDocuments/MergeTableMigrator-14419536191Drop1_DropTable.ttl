@@ -1,0 +1,160 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Mary a prov:Agent .
+
+exe:MergeTableMigrator-14419536191Drop1 a prov:Activity , "DropTable" ;
+	o2p:instruction "DropTable" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T12:46:06.601"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T12:46:06.670"^^xsd:dateTime .
+
+exe:cdd2e43fed a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.601"^^xsd:dateTime .
+
+exe:199e2d999b a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:startTime "2024-06-24T12:46:06.601"^^xsd:dateTime .
+
+exe:developer_sub_a a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.601"^^xsd:dateTime .
+
+exe:IdColumn_1_developer_sub_a_id a prov:Entity , sch2p:column ;
+	sch2p:columnName "id" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.602"^^xsd:dateTime .
+
+exe:IdColumn_1_developer_sub_a_name a prov:Entity , sch2p:column ;
+	sch2p:columnName "name" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.602"^^xsd:dateTime .
+
+exe:IdColumn_1_developer_sub_a_surname a prov:Entity , sch2p:column ;
+	sch2p:columnName "surname" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.602"^^xsd:dateTime .
+
+exe:IdColumn_1_developer_sub_a_email a prov:Entity , sch2p:column ;
+	sch2p:columnName "email" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.602"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_id a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "10" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.667"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_name a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "Cino" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.667"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "RobertoSN" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.667"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_email a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "cino@florence.it" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.668"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_id d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "8" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.668"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_name d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "Rinaldo" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.668"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "MannoSN" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.668"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_email d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "rinaldo@florence.it" .
+
+exe:IdColumnValue_null_1_developer_sub_a_id d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "6" .
+
+exe:IdColumnValue_null_1_developer_sub_a_name d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "Domenico" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.669"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "ZaccheriaSN" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.669"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_email d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "domenico@florence.it" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.669"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_id d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "4" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.669"^^xsd:dateTime .
+
+exe:IdColumnValue_null_1_developer_sub_a_name d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "Ricco" .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "MartinoSN" .
+
+exe:IdColumnValue_null_1_developer_sub_a_email d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "ricco@florence.it" .
+
+exe:IdColumnValue_null_1_developer_sub_a_id d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "2" .
+
+exe:IdColumnValue_null_1_developer_sub_a_name d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "Castello" .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "SmeraldoSN" .
+
+exe:IdColumnValue_null_1_developer_sub_a_email d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "castello@florence.it" .
+
+exe:developer_sub_b a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b" .
+
+exe:developer_sub_b_old a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b_old" .
+
+exe:developer_sub_a_new a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a_new" .
+
+exe:MergeTableMigrator-14419536191Drop1 prov:wasAssociatedWith exe:Mary .
+
+exe:cdd2e43fed prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:developer_sub_a prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumn_1_developer_sub_a_id prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumn_1_developer_sub_a_name prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumn_1_developer_sub_a_surname prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumn_1_developer_sub_a_email prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumnValue_null_1_developer_sub_a_id prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumnValue_null_1_developer_sub_a_name prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumnValue_null_1_developer_sub_a_surname prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:IdColumnValue_null_1_developer_sub_a_email prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Drop1 .
+
+exe:199e2d999b prov:hadMember exe:developer_sub_b , exe:developer_sub_b_old , exe:developer_sub_a_new ;
+	prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Drop1 ;
+	prov:wasDerivedFrom exe:cdd2e43fed .
+
+exe:MergeTableMigrator-14419536191Drop1 prov:used exe:developer_sub_a .

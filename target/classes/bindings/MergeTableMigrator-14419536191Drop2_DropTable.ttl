@@ -1,0 +1,170 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix var: <http://openprovenance.org/var#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix exe: <http://example.org/> .
+
+
+var:sourceColumn a prov:Entity ;
+	tmpl:value_0 exe:IdColumn_1_developer_sub_b_id ;
+	tmpl:value_1 exe:IdColumn_1_developer_sub_b_name ;
+	tmpl:value_2 exe:IdColumn_1_developer_sub_b_surname ;
+	tmpl:value_3 exe:IdColumn_1_developer_sub_b_email .
+
+var:sourceTable a prov:Entity ;
+	tmpl:value_0 exe:developer_sub_b .
+
+var:targetSchema a prov:Entity ;
+	tmpl:value_0 exe:199e2d999b .
+
+var:user a prov:Entity ;
+	tmpl:value_0 exe:Mary .
+
+var:previousTable a prov:Entity ;
+	tmpl:value_0 exe:developer_sub_b_old ;
+	tmpl:value_1 exe:developer_sub_a_new .
+
+var:sourceColumnValue a prov:Entity ;
+	tmpl:value_0 exe:IdColumnValue_null_1_developer_sub_b_id ;
+	tmpl:value_1 exe:IdColumnValue_null_1_developer_sub_b_name ;
+	tmpl:value_2 exe:IdColumnValue_null_1_developer_sub_b_surname ;
+	tmpl:value_3 exe:IdColumnValue_null_1_developer_sub_b_email ;
+	tmpl:value_4 exe:IdColumnValue_null_1_developer_sub_b_id ;
+	tmpl:value_5 exe:IdColumnValue_null_1_developer_sub_b_name ;
+	tmpl:value_6 exe:IdColumnValue_null_1_developer_sub_b_surname ;
+	tmpl:value_7 exe:IdColumnValue_null_1_developer_sub_b_email ;
+	tmpl:value_8 exe:IdColumnValue_null_1_developer_sub_b_id ;
+	tmpl:value_9 exe:IdColumnValue_null_1_developer_sub_b_name ;
+	tmpl:value_10 exe:IdColumnValue_null_1_developer_sub_b_surname ;
+	tmpl:value_11 exe:IdColumnValue_null_1_developer_sub_b_email ;
+	tmpl:value_12 exe:IdColumnValue_null_1_developer_sub_b_id ;
+	tmpl:value_13 exe:IdColumnValue_null_1_developer_sub_b_name ;
+	tmpl:value_14 exe:IdColumnValue_null_1_developer_sub_b_surname ;
+	tmpl:value_15 exe:IdColumnValue_null_1_developer_sub_b_email ;
+	tmpl:value_16 exe:IdColumnValue_null_1_developer_sub_b_id ;
+	tmpl:value_17 exe:IdColumnValue_null_1_developer_sub_b_name ;
+	tmpl:value_18 exe:IdColumnValue_null_1_developer_sub_b_surname ;
+	tmpl:value_19 exe:IdColumnValue_null_1_developer_sub_b_email .
+
+var:smo a prov:Entity ;
+	tmpl:value_0 exe:MergeTableMigrator-14419536191Drop2 .
+
+var:sourceSchema a prov:Entity ;
+	tmpl:value_0 exe:cdd2e43fed .
+
+var:pTableName a prov:Entity ;
+	tmpl:2dvalue_0_0 "developer_sub_b_old" ;
+	tmpl:2dvalue_1_0 "developer_sub_a_new" .
+
+var:scvEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_1_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_2_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_3_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_4_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_5_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_6_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_7_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_8_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_9_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_10_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_11_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_12_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_13_0 "2024-06-24T12:46:06.789"^^xsd:dateTime ;
+	tmpl:2dvalue_14_0 "2024-06-24T12:46:06.790"^^xsd:dateTime ;
+	tmpl:2dvalue_15_0 "2024-06-24T12:46:06.790"^^xsd:dateTime ;
+	tmpl:2dvalue_16_0 "2024-06-24T12:46:06.790"^^xsd:dateTime ;
+	tmpl:2dvalue_17_0 "2024-06-24T12:46:06.790"^^xsd:dateTime ;
+	tmpl:2dvalue_18_0 "2024-06-24T12:46:06.790"^^xsd:dateTime ;
+	tmpl:2dvalue_19_0 "2024-06-24T12:46:06.790"^^xsd:dateTime .
+
+var:tSchemaName a prov:Entity ;
+	tmpl:2dvalue_0_0 "db_new" .
+
+var:startTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.743"^^xsd:dateTime .
+
+var:stEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.743"^^xsd:dateTime .
+
+var:ssEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.743"^^xsd:dateTime .
+
+var:operatorName a prov:Entity ;
+	tmpl:2dvalue_0_0 "DropTable" .
+
+var:sSchemaName a prov:Entity ;
+	tmpl:2dvalue_0_0 "db_new" .
+
+var:executed a prov:Entity ;
+	tmpl:2dvalue_0_0 "true" .
+
+var:rowId a prov:Entity ;
+	tmpl:2dvalue_0_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_1_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_2_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_3_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_4_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_5_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_6_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_7_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_8_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_9_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_10_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_11_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_12_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_13_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_14_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_15_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_16_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_17_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_18_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_19_0 "1_Simone_FederigoSN_simone@florence.it" .
+
+var:endTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.790"^^xsd:dateTime .
+
+var:sTableName a prov:Entity ;
+	tmpl:2dvalue_0_0 "developer_sub_b" .
+
+var:columnValue a prov:Entity ;
+	tmpl:2dvalue_0_0 "9" ;
+	tmpl:2dvalue_1_0 "Ambrogio" ;
+	tmpl:2dvalue_2_0 "SalviSN" ;
+	tmpl:2dvalue_3_0 "ambrogio@florence.it" ;
+	tmpl:2dvalue_4_0 "7" ;
+	tmpl:2dvalue_5_0 "Monte" ;
+	tmpl:2dvalue_6_0 "NuccioSN" ;
+	tmpl:2dvalue_7_0 "monte@florence.it" ;
+	tmpl:2dvalue_8_0 "5" ;
+	tmpl:2dvalue_9_0 "Adamo" ;
+	tmpl:2dvalue_10_0 "AbramoSN" ;
+	tmpl:2dvalue_11_0 "adamo@florence.it" ;
+	tmpl:2dvalue_12_0 "3" ;
+	tmpl:2dvalue_13_0 "Cosimo" ;
+	tmpl:2dvalue_14_0 "BuonoSN" ;
+	tmpl:2dvalue_15_0 "cosimo@florence.it" ;
+	tmpl:2dvalue_16_0 "1" ;
+	tmpl:2dvalue_17_0 "Simone" ;
+	tmpl:2dvalue_18_0 "FederigoSN" ;
+	tmpl:2dvalue_19_0 "simone@florence.it" .
+
+var:operationInstruction a prov:Entity ;
+	tmpl:2dvalue_0_0 "DropTable" .
+
+var:tsStartTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.743"^^xsd:dateTime .
+
+var:scEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T12:46:06.743"^^xsd:dateTime ;
+	tmpl:2dvalue_1_0 "2024-06-24T12:46:06.743"^^xsd:dateTime ;
+	tmpl:2dvalue_2_0 "2024-06-24T12:46:06.743"^^xsd:dateTime ;
+	tmpl:2dvalue_3_0 "2024-06-24T12:46:06.743"^^xsd:dateTime .
+
+var:sColumnName a prov:Entity ;
+	tmpl:2dvalue_0_0 "id" ;
+	tmpl:2dvalue_1_0 "name" ;
+	tmpl:2dvalue_2_0 "surname" ;
+	tmpl:2dvalue_3_0 "email" .

@@ -1,0 +1,252 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix var: <http://openprovenance.org/var#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix exe: <http://example.org/> .
+
+
+var:sourceColumn a prov:Entity ;
+	tmpl:value_0 exe:IdColumn_2_developer_sub_a_new_id ;
+	tmpl:value_1 exe:IdColumn_2_developer_sub_a_new_name ;
+	tmpl:value_2 exe:IdColumn_2_developer_sub_a_new_surname ;
+	tmpl:value_3 exe:IdColumn_2_developer_sub_a_new_email .
+
+var:sourceTable a prov:Entity ;
+	tmpl:value_0 exe:developer_sub_a_new .
+
+var:targetSchema a prov:Entity ;
+	tmpl:value_0 exe:3c6daa2c96 .
+
+var:user a prov:Entity ;
+	tmpl:value_0 exe:Michael .
+
+var:previousTable a prov:Entity ;
+	tmpl:value_0 exe:developer_sub_b_old ;
+	tmpl:value_1 exe:developer_sub_a ;
+	tmpl:value_2 exe:contact .
+
+var:sourceColumnValue a prov:Entity ;
+	tmpl:value_0 exe:IdColumnValue_6_2_developer_sub_a_new_id ;
+	tmpl:value_1 exe:IdColumnValue_6_2_developer_sub_a_new_name ;
+	tmpl:value_2 exe:IdColumnValue_6_2_developer_sub_a_new_surname ;
+	tmpl:value_3 exe:IdColumnValue_6_2_developer_sub_a_new_email ;
+	tmpl:value_4 exe:IdColumnValue_8_2_developer_sub_a_new_id ;
+	tmpl:value_5 exe:IdColumnValue_8_2_developer_sub_a_new_name ;
+	tmpl:value_6 exe:IdColumnValue_8_2_developer_sub_a_new_surname ;
+	tmpl:value_7 exe:IdColumnValue_8_2_developer_sub_a_new_email ;
+	tmpl:value_8 exe:IdColumnValue_10_2_developer_sub_a_new_id ;
+	tmpl:value_9 exe:IdColumnValue_10_2_developer_sub_a_new_name ;
+	tmpl:value_10 exe:IdColumnValue_10_2_developer_sub_a_new_surname ;
+	tmpl:value_11 exe:IdColumnValue_10_2_developer_sub_a_new_email ;
+	tmpl:value_12 exe:IdColumnValue_1_2_developer_sub_a_new_id ;
+	tmpl:value_13 exe:IdColumnValue_1_2_developer_sub_a_new_name ;
+	tmpl:value_14 exe:IdColumnValue_1_2_developer_sub_a_new_surname ;
+	tmpl:value_15 exe:IdColumnValue_1_2_developer_sub_a_new_email ;
+	tmpl:value_16 exe:IdColumnValue_9_2_developer_sub_a_new_id ;
+	tmpl:value_17 exe:IdColumnValue_9_2_developer_sub_a_new_name ;
+	tmpl:value_18 exe:IdColumnValue_9_2_developer_sub_a_new_surname ;
+	tmpl:value_19 exe:IdColumnValue_9_2_developer_sub_a_new_email ;
+	tmpl:value_20 exe:IdColumnValue_4_2_developer_sub_a_new_id ;
+	tmpl:value_21 exe:IdColumnValue_4_2_developer_sub_a_new_name ;
+	tmpl:value_22 exe:IdColumnValue_4_2_developer_sub_a_new_surname ;
+	tmpl:value_23 exe:IdColumnValue_4_2_developer_sub_a_new_email ;
+	tmpl:value_24 exe:IdColumnValue_7_2_developer_sub_a_new_id ;
+	tmpl:value_25 exe:IdColumnValue_7_2_developer_sub_a_new_name ;
+	tmpl:value_26 exe:IdColumnValue_7_2_developer_sub_a_new_surname ;
+	tmpl:value_27 exe:IdColumnValue_7_2_developer_sub_a_new_email ;
+	tmpl:value_28 exe:IdColumnValue_3_2_developer_sub_a_new_id ;
+	tmpl:value_29 exe:IdColumnValue_3_2_developer_sub_a_new_name ;
+	tmpl:value_30 exe:IdColumnValue_3_2_developer_sub_a_new_surname ;
+	tmpl:value_31 exe:IdColumnValue_3_2_developer_sub_a_new_email ;
+	tmpl:value_32 exe:IdColumnValue_2_2_developer_sub_a_new_id ;
+	tmpl:value_33 exe:IdColumnValue_2_2_developer_sub_a_new_name ;
+	tmpl:value_34 exe:IdColumnValue_2_2_developer_sub_a_new_surname ;
+	tmpl:value_35 exe:IdColumnValue_2_2_developer_sub_a_new_email ;
+	tmpl:value_36 exe:IdColumnValue_5_2_developer_sub_a_new_id ;
+	tmpl:value_37 exe:IdColumnValue_5_2_developer_sub_a_new_name ;
+	tmpl:value_38 exe:IdColumnValue_5_2_developer_sub_a_new_surname ;
+	tmpl:value_39 exe:IdColumnValue_5_2_developer_sub_a_new_email .
+
+var:smo a prov:Entity ;
+	tmpl:value_0 exe:DecomposeTableMigrator-19347652605Drop .
+
+var:sourceSchema a prov:Entity ;
+	tmpl:value_0 exe:47d4d23c6e .
+
+var:pTableName a prov:Entity ;
+	tmpl:2dvalue_0_0 "developer_sub_b_old" ;
+	tmpl:2dvalue_1_0 "developer_sub_a" ;
+	tmpl:2dvalue_2_0 "contact" .
+
+var:scvEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_1_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_2_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_3_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_4_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_5_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_6_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_7_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_8_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_9_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_10_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_11_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_12_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_13_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_14_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_15_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_16_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_17_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_18_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_19_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_20_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_21_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_22_0 "2024-06-24T16:03:48.416"^^xsd:dateTime ;
+	tmpl:2dvalue_23_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_24_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_25_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_26_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_27_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_28_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_29_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_30_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_31_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_32_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_33_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_34_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_35_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_36_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_37_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_38_0 "2024-06-24T16:03:48.417"^^xsd:dateTime ;
+	tmpl:2dvalue_39_0 "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+var:tSchemaName a prov:Entity ;
+	tmpl:2dvalue_0_0 "db_new" .
+
+var:startTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+var:stEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+var:ssEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+var:operatorName a prov:Entity ;
+	tmpl:2dvalue_0_0 "DropTable" .
+
+var:sSchemaName a prov:Entity ;
+	tmpl:2dvalue_0_0 "db_new" .
+
+var:executed a prov:Entity ;
+	tmpl:2dvalue_0_0 "true" .
+
+var:rowId a prov:Entity ;
+	tmpl:2dvalue_0_0 "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	tmpl:2dvalue_1_0 "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	tmpl:2dvalue_2_0 "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	tmpl:2dvalue_3_0 "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	tmpl:2dvalue_4_0 "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	tmpl:2dvalue_5_0 "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	tmpl:2dvalue_6_0 "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	tmpl:2dvalue_7_0 "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	tmpl:2dvalue_8_0 "10_Cino_RobertoSN_cino@florence.it" ;
+	tmpl:2dvalue_9_0 "10_Cino_RobertoSN_cino@florence.it" ;
+	tmpl:2dvalue_10_0 "10_Cino_RobertoSN_cino@florence.it" ;
+	tmpl:2dvalue_11_0 "10_Cino_RobertoSN_cino@florence.it" ;
+	tmpl:2dvalue_12_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_13_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_14_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_15_0 "1_Simone_FederigoSN_simone@florence.it" ;
+	tmpl:2dvalue_16_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_17_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_18_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_19_0 "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	tmpl:2dvalue_20_0 "4_Ricco_MartinoSN_ricco@florence.it" ;
+	tmpl:2dvalue_21_0 "4_Ricco_MartinoSN_ricco@florence.it" ;
+	tmpl:2dvalue_22_0 "4_Ricco_MartinoSN_ricco@florence.it" ;
+	tmpl:2dvalue_23_0 "4_Ricco_MartinoSN_ricco@florence.it" ;
+	tmpl:2dvalue_24_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_25_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_26_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_27_0 "7_Monte_NuccioSN_monte@florence.it" ;
+	tmpl:2dvalue_28_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_29_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_30_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_31_0 "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	tmpl:2dvalue_32_0 "2_Castello_SmeraldoSN_castello@florence.it" ;
+	tmpl:2dvalue_33_0 "2_Castello_SmeraldoSN_castello@florence.it" ;
+	tmpl:2dvalue_34_0 "2_Castello_SmeraldoSN_castello@florence.it" ;
+	tmpl:2dvalue_35_0 "2_Castello_SmeraldoSN_castello@florence.it" ;
+	tmpl:2dvalue_36_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_37_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_38_0 "5_Adamo_AbramoSN_adamo@florence.it" ;
+	tmpl:2dvalue_39_0 "5_Adamo_AbramoSN_adamo@florence.it" .
+
+var:endTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+var:sTableName a prov:Entity ;
+	tmpl:2dvalue_0_0 "developer_sub_a_new" .
+
+var:columnValue a prov:Entity ;
+	tmpl:2dvalue_0_0 "6" ;
+	tmpl:2dvalue_1_0 "Domenico" ;
+	tmpl:2dvalue_2_0 "ZaccheriaSN" ;
+	tmpl:2dvalue_3_0 "domenico@florence.it" ;
+	tmpl:2dvalue_4_0 "8" ;
+	tmpl:2dvalue_5_0 "Rinaldo" ;
+	tmpl:2dvalue_6_0 "MannoSN" ;
+	tmpl:2dvalue_7_0 "rinaldo@florence.it" ;
+	tmpl:2dvalue_8_0 "10" ;
+	tmpl:2dvalue_9_0 "Cino" ;
+	tmpl:2dvalue_10_0 "RobertoSN" ;
+	tmpl:2dvalue_11_0 "cino@florence.it" ;
+	tmpl:2dvalue_12_0 "1" ;
+	tmpl:2dvalue_13_0 "Simone" ;
+	tmpl:2dvalue_14_0 "FederigoSN" ;
+	tmpl:2dvalue_15_0 "simone@florence.it" ;
+	tmpl:2dvalue_16_0 "9" ;
+	tmpl:2dvalue_17_0 "Ambrogio" ;
+	tmpl:2dvalue_18_0 "SalviSN" ;
+	tmpl:2dvalue_19_0 "ambrogio@florence.it" ;
+	tmpl:2dvalue_20_0 "4" ;
+	tmpl:2dvalue_21_0 "Ricco" ;
+	tmpl:2dvalue_22_0 "MartinoSN" ;
+	tmpl:2dvalue_23_0 "ricco@florence.it" ;
+	tmpl:2dvalue_24_0 "7" ;
+	tmpl:2dvalue_25_0 "Monte" ;
+	tmpl:2dvalue_26_0 "NuccioSN" ;
+	tmpl:2dvalue_27_0 "monte@florence.it" ;
+	tmpl:2dvalue_28_0 "3" ;
+	tmpl:2dvalue_29_0 "Cosimo" ;
+	tmpl:2dvalue_30_0 "BuonoSN" ;
+	tmpl:2dvalue_31_0 "cosimo@florence.it" ;
+	tmpl:2dvalue_32_0 "2" ;
+	tmpl:2dvalue_33_0 "Castello" ;
+	tmpl:2dvalue_34_0 "SmeraldoSN" ;
+	tmpl:2dvalue_35_0 "castello@florence.it" ;
+	tmpl:2dvalue_36_0 "5" ;
+	tmpl:2dvalue_37_0 "Adamo" ;
+	tmpl:2dvalue_38_0 "AbramoSN" ;
+	tmpl:2dvalue_39_0 "adamo@florence.it" .
+
+var:operationInstruction a prov:Entity ;
+	tmpl:2dvalue_0_0 "DropTable" .
+
+var:tsStartTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+var:scEndTransTime a prov:Entity ;
+	tmpl:2dvalue_0_0 "2024-06-24T16:03:48.363"^^xsd:dateTime ;
+	tmpl:2dvalue_1_0 "2024-06-24T16:03:48.363"^^xsd:dateTime ;
+	tmpl:2dvalue_2_0 "2024-06-24T16:03:48.363"^^xsd:dateTime ;
+	tmpl:2dvalue_3_0 "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+var:sColumnName a prov:Entity ;
+	tmpl:2dvalue_0_0 "id" ;
+	tmpl:2dvalue_1_0 "name" ;
+	tmpl:2dvalue_2_0 "surname" ;
+	tmpl:2dvalue_3_0 "email" .

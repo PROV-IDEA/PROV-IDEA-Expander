@@ -1,0 +1,353 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Michael a prov:Agent .
+
+exe:DecomposeTableMigrator-19347652605Insert2 a prov:Activity , "insert" ;
+	o2p:instruction "insert INTO contact select id, email from developer_sub_a_new;" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.055"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "6_domenico@florence.it" ;
+	d2p:columnValue "6" .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "6_domenico@florence.it" ;
+	d2p:columnValue "domenico@florence.it" .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "8_rinaldo@florence.it" ;
+	d2p:columnValue "8" .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "8_rinaldo@florence.it" ;
+	d2p:columnValue "rinaldo@florence.it" .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "10_cino@florence.it" ;
+	d2p:columnValue "10" .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "10_cino@florence.it" ;
+	d2p:columnValue "cino@florence.it" .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "1_simone@florence.it" ;
+	d2p:columnValue "1" .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "1_simone@florence.it" ;
+	d2p:columnValue "simone@florence.it" .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "9_ambrogio@florence.it" ;
+	d2p:columnValue "9" .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "9_ambrogio@florence.it" ;
+	d2p:columnValue "ambrogio@florence.it" .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "4_ricco@florence.it" ;
+	d2p:columnValue "4" .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "4_ricco@florence.it" ;
+	d2p:columnValue "ricco@florence.it" .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "7_monte@florence.it" ;
+	d2p:columnValue "7" .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "7_monte@florence.it" ;
+	d2p:columnValue "monte@florence.it" .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "3_cosimo@florence.it" ;
+	d2p:columnValue "3" .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "3_cosimo@florence.it" ;
+	d2p:columnValue "cosimo@florence.it" .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "2_castello@florence.it" ;
+	d2p:columnValue "2" .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "2_castello@florence.it" ;
+	d2p:columnValue "castello@florence.it" .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "5_adamo@florence.it" ;
+	d2p:columnValue "5" .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "5_adamo@florence.it" ;
+	d2p:columnValue "adamo@florence.it" .
+
+exe:contact a prov:Entity , sch2p:table ;
+	sch2p:tableName "contact" .
+
+exe:IdColumn_3_contact_id a prov:Entity , sch2p:column ;
+	sch2p:columnName "id" .
+
+exe:IdColumn_3_contact_email a prov:Entity , sch2p:column ;
+	sch2p:columnName "email" .
+
+exe:IdColumnValue_6_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "6_domenico@florence.it" ;
+	d2p:columnValue "6" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.117"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_6_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_6_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "6_domenico@florence.it" ;
+	d2p:columnValue "domenico@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_6_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_8_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "8_rinaldo@florence.it" ;
+	d2p:columnValue "8" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_8_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_8_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "8_rinaldo@florence.it" ;
+	d2p:columnValue "rinaldo@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_8_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_10_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "10_cino@florence.it" ;
+	d2p:columnValue "10" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_10_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_10_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "10_cino@florence.it" ;
+	d2p:columnValue "cino@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_10_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_1_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "1_simone@florence.it" ;
+	d2p:columnValue "1" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_1_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_1_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "1_simone@florence.it" ;
+	d2p:columnValue "simone@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_1_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_9_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "9_ambrogio@florence.it" ;
+	d2p:columnValue "9" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.118"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_9_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_9_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "9_ambrogio@florence.it" ;
+	d2p:columnValue "ambrogio@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_9_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_4_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "4_ricco@florence.it" ;
+	d2p:columnValue "4" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_4_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_4_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "4_ricco@florence.it" ;
+	d2p:columnValue "ricco@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_4_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_7_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "7_monte@florence.it" ;
+	d2p:columnValue "7" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_7_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_7_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "7_monte@florence.it" ;
+	d2p:columnValue "monte@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_7_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_3_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "3_cosimo@florence.it" ;
+	d2p:columnValue "3" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_3_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_3_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "3_cosimo@florence.it" ;
+	d2p:columnValue "cosimo@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_3_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_2_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "2_castello@florence.it" ;
+	d2p:columnValue "2" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_2_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_2_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "2_castello@florence.it" ;
+	d2p:columnValue "castello@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_2_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:IdColumnValue_5_3_contact_id a prov:Entity , d2p:value ;
+	d2p:rowID "5_adamo@florence.it" ;
+	d2p:columnValue "5" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_5_2_developer_sub_a_new_id" , "IdColumn_3_contact_id" .
+
+exe:IdColumnValue_5_3_contact_email a prov:Entity , d2p:value ;
+	d2p:rowID "5_adamo@florence.it" ;
+	d2p:columnValue "adamo@florence.it" ;
+	bitemp:startTransTime "2024-06-24T16:03:49.119"^^xsd:dateTime ;
+	tmpl:linked "IdColumnValue_5_2_developer_sub_a_new_email" , "IdColumn_3_contact_email" .
+
+exe:DecomposeTableMigrator-19347652605Insert2 prov:wasAssociatedWith exe:Michael .
+
+exe:IdColumnValue_6_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_6_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_8_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_8_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_10_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_10_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_1_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_1_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_9_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_9_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_4_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_4_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_7_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_7_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_3_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_3_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_2_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_2_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_5_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_5_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Insert2 .
+
+exe:IdColumnValue_6_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_6_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_8_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_8_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_10_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_10_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_1_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_1_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_9_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_9_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_4_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_4_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_7_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_7_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_3_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_3_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_2_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_2_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_5_3_contact_id prov:specializationOf exe:IdColumn_3_contact_id .
+
+exe:IdColumnValue_5_3_contact_email prov:specializationOf exe:IdColumn_3_contact_email .
+
+exe:IdColumnValue_6_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_6_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_6_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_6_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_8_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_8_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_8_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_8_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_10_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_10_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_10_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_10_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_1_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_1_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_1_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_1_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_9_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_9_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_9_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_9_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_4_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_4_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_4_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_4_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_7_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_7_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_7_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_7_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_3_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_3_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_3_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_3_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_2_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_2_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_2_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_2_2_developer_sub_a_new_email .
+
+exe:IdColumnValue_5_3_contact_id prov:wasDerivedFrom exe:IdColumnValue_5_2_developer_sub_a_new_id .
+
+exe:IdColumnValue_5_3_contact_email prov:wasDerivedFrom exe:IdColumnValue_5_2_developer_sub_a_new_email .
+
+exe:DecomposeTableMigrator-19347652605Insert2 prov:used exe:IdColumn_3_contact_id , exe:IdColumn_3_contact_email , exe:contact , exe:IdColumnValue_6_2_developer_sub_a_new_id , exe:IdColumnValue_6_2_developer_sub_a_new_email , exe:IdColumnValue_8_2_developer_sub_a_new_id , exe:IdColumnValue_8_2_developer_sub_a_new_email , exe:IdColumnValue_10_2_developer_sub_a_new_id , exe:IdColumnValue_10_2_developer_sub_a_new_email , exe:IdColumnValue_1_2_developer_sub_a_new_id , exe:IdColumnValue_1_2_developer_sub_a_new_email , exe:IdColumnValue_9_2_developer_sub_a_new_id , exe:IdColumnValue_9_2_developer_sub_a_new_email , exe:IdColumnValue_4_2_developer_sub_a_new_id , exe:IdColumnValue_4_2_developer_sub_a_new_email , exe:IdColumnValue_7_2_developer_sub_a_new_id , exe:IdColumnValue_7_2_developer_sub_a_new_email , exe:IdColumnValue_3_2_developer_sub_a_new_id , exe:IdColumnValue_3_2_developer_sub_a_new_email , exe:IdColumnValue_2_2_developer_sub_a_new_id , exe:IdColumnValue_2_2_developer_sub_a_new_email , exe:IdColumnValue_5_2_developer_sub_a_new_id , exe:IdColumnValue_5_2_developer_sub_a_new_email .

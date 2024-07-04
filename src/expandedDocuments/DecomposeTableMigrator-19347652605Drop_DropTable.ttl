@@ -1,0 +1,357 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Michael a prov:Agent .
+
+exe:DecomposeTableMigrator-19347652605Drop a prov:Activity , "DropTable" ;
+	o2p:instruction "DropTable" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:47d4d23c6e a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:3c6daa2c96 a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:startTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:developer_sub_a_new a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a_new" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:IdColumn_2_developer_sub_a_new_id a prov:Entity , sch2p:column ;
+	sch2p:columnName "id" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:IdColumn_2_developer_sub_a_new_name a prov:Entity , sch2p:column ;
+	sch2p:columnName "name" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:IdColumn_2_developer_sub_a_new_surname a prov:Entity , sch2p:column ;
+	sch2p:columnName "surname" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:IdColumn_2_developer_sub_a_new_email a prov:Entity , sch2p:column ;
+	sch2p:columnName "email" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.363"^^xsd:dateTime .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "6" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "Domenico" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "ZaccheriaSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "6_Domenico_ZaccheriaSN_domenico@florence.it" ;
+	d2p:columnValue "domenico@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "8" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "Rinaldo" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "MannoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "8_Rinaldo_MannoSN_rinaldo@florence.it" ;
+	d2p:columnValue "rinaldo@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "10" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "Cino" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "RobertoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "10_Cino_RobertoSN_cino@florence.it" ;
+	d2p:columnValue "cino@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "1_Simone_FederigoSN_simone@florence.it" ;
+	d2p:columnValue "1" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "1_Simone_FederigoSN_simone@florence.it" ;
+	d2p:columnValue "Simone" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "1_Simone_FederigoSN_simone@florence.it" ;
+	d2p:columnValue "FederigoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "1_Simone_FederigoSN_simone@florence.it" ;
+	d2p:columnValue "simone@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	d2p:columnValue "9" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	d2p:columnValue "Ambrogio" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	d2p:columnValue "SalviSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "9_Ambrogio_SalviSN_ambrogio@florence.it" ;
+	d2p:columnValue "ambrogio@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "4" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "Ricco" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "MartinoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.416"^^xsd:dateTime .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "4_Ricco_MartinoSN_ricco@florence.it" ;
+	d2p:columnValue "ricco@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "7_Monte_NuccioSN_monte@florence.it" ;
+	d2p:columnValue "7" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "7_Monte_NuccioSN_monte@florence.it" ;
+	d2p:columnValue "Monte" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "7_Monte_NuccioSN_monte@florence.it" ;
+	d2p:columnValue "NuccioSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "7_Monte_NuccioSN_monte@florence.it" ;
+	d2p:columnValue "monte@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	d2p:columnValue "3" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	d2p:columnValue "Cosimo" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	d2p:columnValue "BuonoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "3_Cosimo_BuonoSN_cosimo@florence.it" ;
+	d2p:columnValue "cosimo@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "2" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "Castello" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "SmeraldoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "2_Castello_SmeraldoSN_castello@florence.it" ;
+	d2p:columnValue "castello@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_id a prov:Entity , d2p:value ;
+	d2p:rowID "5_Adamo_AbramoSN_adamo@florence.it" ;
+	d2p:columnValue "5" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_name a prov:Entity , d2p:value ;
+	d2p:rowID "5_Adamo_AbramoSN_adamo@florence.it" ;
+	d2p:columnValue "Adamo" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_surname a prov:Entity , d2p:value ;
+	d2p:rowID "5_Adamo_AbramoSN_adamo@florence.it" ;
+	d2p:columnValue "AbramoSN" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_email a prov:Entity , d2p:value ;
+	d2p:rowID "5_Adamo_AbramoSN_adamo@florence.it" ;
+	d2p:columnValue "adamo@florence.it" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.417"^^xsd:dateTime .
+
+exe:developer_sub_b_old a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b_old" .
+
+exe:developer_sub_a a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a" .
+
+exe:contact a prov:Entity , sch2p:table ;
+	sch2p:tableName "contact" .
+
+exe:DecomposeTableMigrator-19347652605Drop prov:wasAssociatedWith exe:Michael .
+
+exe:47d4d23c6e prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:developer_sub_a_new prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumn_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumn_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumn_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumn_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_6_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_8_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_10_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_1_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_9_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_4_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_7_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_3_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_2_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_id prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_name prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_surname prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:IdColumnValue_5_2_developer_sub_a_new_email prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Drop .
+
+exe:3c6daa2c96 prov:hadMember exe:developer_sub_b_old , exe:developer_sub_a , exe:contact ;
+	prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Drop ;
+	prov:wasDerivedFrom exe:47d4d23c6e .
+
+exe:DecomposeTableMigrator-19347652605Drop prov:used exe:developer_sub_a_new .

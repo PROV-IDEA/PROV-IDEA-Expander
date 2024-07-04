@@ -1,0 +1,111 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Mary a prov:Agent .
+
+exe:MergeTableMigrator-14419536191Create a prov:Activity , "CreateTable" ;
+	o2p:instruction "CreateTable" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T12:46:06.416"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T12:46:06.425"^^xsd:dateTime .
+
+exe:cdd2e43fed a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:endTransTime "2024-06-24T12:46:06.417"^^xsd:dateTime .
+
+exe:199e2d999b a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:startTransTime "2024-06-24T12:46:06.417"^^xsd:dateTime .
+
+exe:developer_sub_a_new a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a_new" ;
+	bitemp:startTransTime "2024-06-24T12:46:06.417"^^xsd:dateTime .
+
+exe:developer_sub_a a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a" .
+
+exe:developer_sub_b a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b" .
+
+exe:developer_sub_b_old a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b_old" .
+
+exe:Migrator-14419536194_1_developer_sub_a_new a prov:Entity ;
+	prov:value "developer_sub_a_new" .
+
+exe:IdColumn_2_developer_sub_a_new_id a prov:Entity ;
+	sch2p:columnName "id" ;
+	sch2p:typeName "integer" .
+
+exe:IdColumn_2_developer_sub_a_new_name a prov:Entity ;
+	sch2p:columnName "name" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_2_developer_sub_a_new_surname a prov:Entity ;
+	sch2p:columnName "surname" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_2_developer_sub_a_new_email a prov:Entity ;
+	sch2p:columnName "email" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_2_developer_sub_a_new_id a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T12:46:06.421"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_2_developer_sub_a_new_id" .
+
+exe:IdColumn_2_developer_sub_a_new_name a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T12:46:06.422"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_2_developer_sub_a_new_name" .
+
+exe:IdColumn_2_developer_sub_a_new_surname a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T12:46:06.422"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_2_developer_sub_a_new_surname" .
+
+exe:IdColumn_2_developer_sub_a_new_email a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T12:46:06.423"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_2_developer_sub_a_new_email" .
+
+exe:MergeTableMigrator-14419536191Create prov:wasAssociatedWith exe:Mary .
+
+exe:cdd2e43fed prov:wasInvalidatedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:199e2d999b prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:developer_sub_a_new prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:IdColumn_2_developer_sub_a_new_id prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:IdColumn_2_developer_sub_a_new_name prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:IdColumn_2_developer_sub_a_new_surname prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:IdColumn_2_developer_sub_a_new_email prov:wasGeneratedBy exe:MergeTableMigrator-14419536191Create .
+
+exe:199e2d999b prov:hadMember exe:developer_sub_a_new .
+
+exe:developer_sub_a_new prov:hadMember exe:IdColumn_2_developer_sub_a_new_id , exe:IdColumn_2_developer_sub_a_new_name , exe:IdColumn_2_developer_sub_a_new_surname , exe:IdColumn_2_developer_sub_a_new_email .
+
+exe:199e2d999b prov:hadMember exe:developer_sub_a , exe:developer_sub_b , exe:developer_sub_b_old ;
+	prov:wasDerivedFrom exe:cdd2e43fed .
+
+exe:developer_sub_a_new prov:wasDerivedFrom exe:Migrator-14419536194_1_developer_sub_a_new .
+
+exe:IdColumn_2_developer_sub_a_new_id prov:wasDerivedFrom exe:IdColumn_2_developer_sub_a_new_id .
+
+exe:IdColumn_2_developer_sub_a_new_name prov:wasDerivedFrom exe:IdColumn_2_developer_sub_a_new_name .
+
+exe:IdColumn_2_developer_sub_a_new_surname prov:wasDerivedFrom exe:IdColumn_2_developer_sub_a_new_surname .
+
+exe:IdColumn_2_developer_sub_a_new_email prov:wasDerivedFrom exe:IdColumn_2_developer_sub_a_new_email .
+
+exe:MergeTableMigrator-14419536191Create prov:used exe:Migrator-14419536194_1_developer_sub_a_new , exe:IdColumn_2_developer_sub_a_new_id , exe:IdColumn_2_developer_sub_a_new_name , exe:IdColumn_2_developer_sub_a_new_surname , exe:IdColumn_2_developer_sub_a_new_email .

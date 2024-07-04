@@ -1,0 +1,61 @@
+document
+ prefix tmpl <http://openprovenance.org/tmpl#>
+ prefix var <http://openprovenance.org/var#>
+ prefix vargen <http://openprovenance.org/vargen#>
+  prefix prov <http://www.w3.org/ns/prov#>
+  prefix xsd <http://www.w3.org/2000/10/XMLSchema#>
+  prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+  prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+  prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+  prefix bitemp <http://uml2prov.unirioja.es/ns/bitemp#>
+
+	bundle vargen:b
+
+		prefix tmpl <http://openprovenance.org/tmpl#>
+  		prefix var <http://openprovenance.org/var#>
+ 		prefix vargen <http://openprovenance.org/vargen#>
+  		prefix prov <http://www.w3.org/ns/prov#>
+  		prefix xsd <http://www.w3.org/2000/10/XMLSchema#>
+  		prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+  		prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+  		prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+  		prefix bitemp <http://uml2prov.unirioja.es/ns/bitemp#>
+
+		agent(var:user,[])
+		activity(var:smo, [prov:type='var:operatorName', o2p:instruction='var:operationInstruction', o2p:executed='var:executed', bitemp:startTransTime='var:startTransTime', bitemp:endTransTime='var:endTransTime'])
+		activity(var:smoCT, [prov:type='var:ctOperatorName', o2p:instruction='var:ctOperationInstruction', o2p:executed='var:ctExecuted', bitemp:startTransTime='var:ctStartTransTime', bitemp:endTransTime='var:ctEndTransTime'])
+		activity(var:dmoI, [prov:type='var:iOperatorName', o2p:instruction='var:iOperationInstruction', o2p:executed='var:iExecuted', bitemp:startTransTime='var:iStartTransTime', bitemp:endTransTime='var:iEndTransTime'])
+		entity(var:sourceSchema, [prov:type='sch2p:schema', sch2p:schemaName='var:sSchemaName', bitemp:endTransTime='var:ssEndTransTime', bitemp:endValidTime='var:ssEndValidTime' ])
+		entity(var:targetSchema, [prov:type='sch2p:schema',  sch2p:schemaName='var:tSchemaName', bitemp:startTransTime='var:tsStartTransTime', bitemp:startValidTime='var:tsStartValidTime' ])
+		entity(var:sourceTable, [prov:type='sch2p:table',  sch2p:tableName='var:sTableName'])
+		entity(var:sourceColumn, [prov:type='sch2p:column', sch2p:columnName='var:sColumnName'])
+		entity(var:sourceColumnValue, [prov:type='d2p:value', d2p:rowID='var:sRowId', d2p:columnValue='var:sColumnValue' ])
+		entity(var:targetTableName, [prov:value='var:inTableName'])
+		entity(var:targetTable, [prov:type='sch2p:table',  sch2p:tableName='var:tTableName', bitemp:startTransTime='var:ttStartTransTime', bitemp:startValidTime='var:ttStartValidTime' ])
+		entity(var:targetColumn, [prov:type='sch2p:column', sch2p:typeName='var:tColumnType', sch2p:columnName='var:tColumnName', bitemp:startTransTime='var:tcStartTransTime', bitemp:startValidTime='var:tcStartValidTime' , tmpl:linked='var:sourceColumn'])
+		entity(var:targetColumnValue, [prov:type='d2p:value', d2p:rowID='var:tRowId', d2p:columnValue='var:tColumnValue',bitemp:startTransTime='var:tcvStartTransTime', bitemp:startValidTime='var:tcvStartValidTime', tmpl:linked='var:sourceColumnValue', tmpl:linked='var:targetColumn'])
+		entity(var:previousTable, [prov:type='sch2p:table',  sch2p:tableName='var:pTableName'])
+
+		wasAssociatedWith(var:smo, var:user, - )
+		used(var:smo, var:targetTableName, -, [])
+		used(var:smo, var:sourceTable, -, []) 
+		wasInvalidatedBy(var:sourceSchema, var:smo, - )
+		wasGeneratedBy(var:targetSchema, var:smo,- )
+		wasGeneratedBy(var:targetTable, var:smo,- )
+		wasGeneratedBy(var:targetColumn, var:smo,- )
+		wasGeneratedBy(var:targetColumnValue, var:smo,- )
+		hadMember(var:targetSchema, var:targetTable)
+		hadMember(var:targetTable, var:targetColumn)
+		hadMember(var:targetSchema, var:previousTable)
+		specializationOf(var:targetColumnValue,var:targetColumn)
+		wasDerivedFrom(var:targetSchema, var:sourceSchema ,[])
+		wasDerivedFrom(var:targetTable, var:targetTableName ,[])
+		wasDerivedFrom(var:targetTable, var:sourceTable ,[])
+		wasDerivedFrom(var:targetColumn, var:sourceColumn ,[])
+		wasDerivedFrom(var:targetColumnValue, var:sourceColumnValue ,[])
+		wasInformedBy(var:smoCT, var:smo,[])
+		wasInformedBy(var:dmoI, var:smo,[])
+		
+	endBundle 
+endDocument
+

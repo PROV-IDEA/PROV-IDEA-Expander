@@ -1,0 +1,57 @@
+document
+  prefix var <http://openprovenance.org/var#>
+  prefix vargen <http://openprovenance.org/vargen#>
+  prefix prov <http://www.w3.org/ns/prov#>
+  prefix xsd <http://www.w3.org/2000/10/XMLSchema#>
+  prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+  prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+  prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+  prefix bitemp<http://uml2prov.unirioja.es/ns/bitemp#>
+
+	bundle vargen:b
+
+ 		prefix vargen <http://openprovenance.org/vargen#>
+    		prefix var <http://openprovenance.org/var#>
+    		prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+		prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+		prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+		prefix bitemp<http://uml2prov.unirioja.es/ns/bitemp#>
+
+		agent(var:user,[])
+		activity(var:smo, [prov:type='var:operatorName', o2p:instruction='var:operationInstruction', o2p:executed='var:executed', bitemp:startTransTime='var:startTransTime', bitemp:endTransTime='var:endTransTime'])
+		entity(var:sourceSchema, [prov:type='sch2p:schema',  sch2p:schemaName='var:sSchemaName', bitemp:endTransTime='var:ssEndTransTime', bitemp:endValidTime='var:ssEndValidTime' ])
+		entity(var:targetSchema, [prov:type='sch2p:schema',  sch2p:schemaName='var:tSchemaName', bitemp:startTime='var:tsStartTransTime', bitemp:startValidTime='var:tsStartValidTime' ])
+		entity(var:sourceTable, [prov:type='sch2p:table',  sch2p:tableName='var:sTableName', bitemp:endTransTime='var:stEndTransTime', bitemp:endValidTime='var:stEndValidTime' ]) 
+		entity(var:targetTable, [prov:type='sch2p:table',  sch2p:tableName='var:tTableName', bitemp:startTransTime='var:ttStartTransTime', bitemp:startValidTime='var:ttStartValidTime' ])
+		entity(var:previousColumn, [prov:type='sch2p:column', sch2p:columnName='var:pColumnName'])
+		entity(var:previousPrimaryKey, [prov:type='sch2p:pk'])
+		
+		entity(var:inputColumnDef, [sch2p:columnName='var:inColumnName', sch2p:typeName='var:inColumnType'])
+		entity(var:inputConstOrFunc, [prov:value='var:inputConstOrFuncValue'])
+		entity(var:newColumn, [prov:type='sch2p:column',  sch2p:typeName='var:nColumnType', sch2p:columnName='var:nColumnName', bitemp:startTransTime='var:ncStartTransTime', bitemp:startValidTime='var:ncStartValidTime' ])
+		entity(var:newColumnValue, [prov:type='d2p:value', d2p:rowID='var:rowId', d2p:columnValue='var:columnValue',bitemp:startTransTime='var:ncvStartTransTime', bitemp:startValidTime='var:ncvStartValidTime' ])
+		entity(var:previousTable, [prov:type='sch2p:table',  sch2p:tableName='var:pTableName'])
+		
+		wasAssociatedWith(var:smo, var:user, - )
+		wasInvalidatedBy(var:sourceSchema, var:smo, - )
+		wasInvalidatedBy(var:sourceTable, var:smo, - )
+		wasGeneratedBy(var:targetSchema, var:smo,- )
+		wasGeneratedBy(var:targetTable, var:smo,- )
+		wasGeneratedBy(var:newColumn, var:smo,- )
+		wasGeneratedBy(var:newColumnValue, var:smo,- )
+		hadMember(var:targetSchema, var:targetTable)
+		hadMember(var:targetTable, var:newColumn)
+		hadMember(var:targetSchema, var:previousTable)
+		hadMember(var:targetTable, var:previousColumn)
+		hadMember(var:targetTable, var:previousPrimaryKey)
+		wasDerivedFrom(var:targetSchema, var:sourceSchema ,[])   
+		wasDerivedFrom(var:targetTable, var:sourceTable ,[]) 
+		wasDerivedFrom(var:newColumn, var:inputColumnDef,[])   
+		wasDerivedFrom(var:newColumnValue, var:inputConstOrFunc ,[])   
+		specializationOf(var:newColumnValue,var:newColumn)
+		used(var:smo, var:inputColumnDef, -, []) 
+		used(var:smo, var:inputConstOrFunc, -, []) 
+		used(var:smo, var:sourceTable, -, [])
+	endBundle 
+endDocument
+

@@ -1,0 +1,96 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Michael a prov:Agent .
+
+exe:DecomposeTableMigrator-19347652605Create1 a prov:Activity , "CreateTable" ;
+	o2p:instruction "CreateTable" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.080"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime .
+
+exe:47d4d23c6e a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime .
+
+exe:0448dd4298 a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime .
+
+exe:developer_sub_a a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime .
+
+exe:developer_sub_a_new a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a_new" .
+
+exe:developer_sub_b_old a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b_old" .
+
+exe:Migrator-19347652607_1_developer_sub_a a prov:Entity ;
+	prov:value "developer_sub_a" .
+
+exe:IdColumn_3_developer_sub_a_id a prov:Entity ;
+	sch2p:columnName "id" ;
+	sch2p:typeName "integer" .
+
+exe:IdColumn_3_developer_sub_a_name a prov:Entity ;
+	sch2p:columnName "name" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_3_developer_sub_a_surname a prov:Entity ;
+	sch2p:columnName "surname" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_3_developer_sub_a_id a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_3_developer_sub_a_id" .
+
+exe:IdColumn_3_developer_sub_a_name a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_3_developer_sub_a_name" .
+
+exe:IdColumn_3_developer_sub_a_surname a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T16:03:48.081"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_3_developer_sub_a_surname" .
+
+exe:DecomposeTableMigrator-19347652605Create1 prov:wasAssociatedWith exe:Michael .
+
+exe:47d4d23c6e prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:0448dd4298 prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:developer_sub_a prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:IdColumn_3_developer_sub_a_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:IdColumn_3_developer_sub_a_name prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:IdColumn_3_developer_sub_a_surname prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create1 .
+
+exe:0448dd4298 prov:hadMember exe:developer_sub_a .
+
+exe:developer_sub_a prov:hadMember exe:IdColumn_3_developer_sub_a_id , exe:IdColumn_3_developer_sub_a_name , exe:IdColumn_3_developer_sub_a_surname .
+
+exe:0448dd4298 prov:hadMember exe:developer_sub_a_new , exe:developer_sub_b_old ;
+	prov:wasDerivedFrom exe:47d4d23c6e .
+
+exe:developer_sub_a prov:wasDerivedFrom exe:Migrator-19347652607_1_developer_sub_a .
+
+exe:IdColumn_3_developer_sub_a_id prov:wasDerivedFrom exe:IdColumn_3_developer_sub_a_id .
+
+exe:IdColumn_3_developer_sub_a_name prov:wasDerivedFrom exe:IdColumn_3_developer_sub_a_name .
+
+exe:IdColumn_3_developer_sub_a_surname prov:wasDerivedFrom exe:IdColumn_3_developer_sub_a_surname .
+
+exe:DecomposeTableMigrator-19347652605Create1 prov:used exe:Migrator-19347652607_1_developer_sub_a , exe:IdColumn_3_developer_sub_a_id , exe:IdColumn_3_developer_sub_a_name , exe:IdColumn_3_developer_sub_a_surname .

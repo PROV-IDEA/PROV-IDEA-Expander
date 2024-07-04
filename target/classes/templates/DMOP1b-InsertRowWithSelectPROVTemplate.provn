@@ -1,0 +1,41 @@
+document
+ prefix tmpl <http://openprovenance.org/tmpl#>
+ prefix var <http://openprovenance.org/var#>
+ prefix vargen <http://openprovenance.org/vargen#>
+  prefix prov <http://www.w3.org/ns/prov#>
+  prefix xsd <http://www.w3.org/2000/10/XMLSchema#>
+  prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+  prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+  prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+  prefix bitemp <http://uml2prov.unirioja.es/ns/bitemp#>
+
+	bundle vargen:b
+
+		prefix tmpl <http://openprovenance.org/tmpl#>
+  		prefix var <http://openprovenance.org/var#>
+ 		prefix vargen <http://openprovenance.org/vargen#>
+  		prefix prov <http://www.w3.org/ns/prov#>
+  		prefix xsd <http://www.w3.org/2000/10/XMLSchema#>
+  		prefix sch2p <http://uml2prov.unirioja.es/ns/sch2p#>
+  		prefix d2p <http://uml2prov.unirioja.es/ns/d2p#>
+  		prefix o2p <http://uml2prov.unirioja.es/ns/o2p#>
+  		prefix bitemp <http://uml2prov.unirioja.es/ns/bitemp#>
+
+		agent(var:user,[])
+		activity(var:dmo, [prov:type='var:operatorName', o2p:instruction='var:operationInstruction', o2p:executed='var:executed', bitemp:startTransTime='var:startTransTime', bitemp:endTransTime='var:endTransTime'])
+		entity(var:value, [prov:type='d2p:value', d2p:rowID='var:vRowId', d2p:columnValue='var:vColumnValue'])
+		entity(var:table, [prov:type='sch2p:table',  sch2p:tableName='var:tableName']) 
+		entity(var:column, [prov:type='sch2p:column', sch2p:columnName='var:columnName'])
+		entity(var:newColumnValue, [prov:type='d2p:value', d2p:rowID='var:rowId', d2p:columnValue='var:columnValue',
+				bitemp:startTransTime='var:startTransTime', bitemp:startValidTime='var:startValidTime', tmpl:linked='var:column',tmpl:linked='var:value' ])
+		
+		wasAssociatedWith(var:dmo, var:user, - )
+		wasGeneratedBy(var:newColumnValue, var:dmo,- )
+		specializationOf(var:newColumnValue, var:column)
+		wasDerivedFrom(var:newColumnValue, var:value ,[])   
+		used(var:dmo, var:column, -, []) 
+		used(var:dmo, var:table, -, [])
+		used(var:dmo, var:value, -, [])
+	endBundle 
+endDocument
+

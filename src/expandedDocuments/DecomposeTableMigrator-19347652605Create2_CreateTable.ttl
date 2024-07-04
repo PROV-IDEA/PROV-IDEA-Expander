@@ -1,0 +1,87 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix d2p: <http://uml2prov.unirioja.es/ns/d2p#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch2p: <http://uml2prov.unirioja.es/ns/sch2p#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix exe: <http://example.org/> .
+@prefix bitemp: <http://uml2prov.unirioja.es/ns/bitemp#> .
+@prefix o2p: <http://uml2prov.unirioja.es/ns/o2p#> .
+@prefix var: <http://openprovenance.org/var#> .
+
+
+exe:Michael a prov:Agent .
+
+exe:DecomposeTableMigrator-19347652605Create2 a prov:Activity , "CreateTable" ;
+	o2p:instruction "CreateTable" ;
+	o2p:executed "true" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime ;
+	bitemp:endTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime .
+
+exe:7f988b71a1 a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:endTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime .
+
+exe:3c6daa2c96 a prov:Entity , sch2p:schema ;
+	sch2p:schemaName "db_new" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime .
+
+exe:contact a prov:Entity , sch2p:table ;
+	sch2p:tableName "contact" ;
+	bitemp:startTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime .
+
+exe:developer_sub_a_new a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a_new" .
+
+exe:developer_sub_b_old a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_b_old" .
+
+exe:developer_sub_a a prov:Entity , sch2p:table ;
+	sch2p:tableName "developer_sub_a" .
+
+exe:Migrator-19347652607_1_contact a prov:Entity ;
+	prov:value "contact" .
+
+exe:IdColumn_3_contact_id a prov:Entity ;
+	sch2p:columnName "id" ;
+	sch2p:typeName "integer" .
+
+exe:IdColumn_3_contact_email a prov:Entity ;
+	sch2p:columnName "email" ;
+	sch2p:typeName "varchar" .
+
+exe:IdColumn_3_contact_id a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_3_contact_id" .
+
+exe:IdColumn_3_contact_email a sch2p:column ;
+	bitemp:startTransTime "2024-06-24T16:03:48.082"^^xsd:dateTime ;
+	tmpl:linked "IdColumn_3_contact_email" .
+
+exe:DecomposeTableMigrator-19347652605Create2 prov:wasAssociatedWith exe:Michael .
+
+exe:7f988b71a1 prov:wasInvalidatedBy exe:DecomposeTableMigrator-19347652605Create2 .
+
+exe:3c6daa2c96 prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create2 .
+
+exe:contact prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create2 .
+
+exe:IdColumn_3_contact_id prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create2 .
+
+exe:IdColumn_3_contact_email prov:wasGeneratedBy exe:DecomposeTableMigrator-19347652605Create2 .
+
+exe:3c6daa2c96 prov:hadMember exe:contact .
+
+exe:contact prov:hadMember exe:IdColumn_3_contact_id , exe:IdColumn_3_contact_email .
+
+exe:3c6daa2c96 prov:hadMember exe:developer_sub_a_new , exe:developer_sub_b_old , exe:developer_sub_a ;
+	prov:wasDerivedFrom exe:7f988b71a1 .
+
+exe:contact prov:wasDerivedFrom exe:Migrator-19347652607_1_contact .
+
+exe:IdColumn_3_contact_id prov:wasDerivedFrom exe:IdColumn_3_contact_id .
+
+exe:IdColumn_3_contact_email prov:wasDerivedFrom exe:IdColumn_3_contact_email .
+
+exe:DecomposeTableMigrator-19347652605Create2 prov:used exe:Migrator-19347652607_1_contact , exe:IdColumn_3_contact_id , exe:IdColumn_3_contact_email .
