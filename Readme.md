@@ -33,7 +33,7 @@ formats such as JSON, JPEG or SVG (options available as static attributes of the
 
 The format can be changed in the following line of the **expand** method:
 
-&emsp;**intFr.writeDocument("src/expandedDocuments/" + expandedDocumentName, ProvFormat.<<format>>, expanded);**
+&emsp;**intFr.writeDocument("src/expandedDocuments/" + expandedDocumentName, ProvFormat.<staticAttribute>, expanded);**
       
 ## Running
 
